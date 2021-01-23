@@ -1,0 +1,37 @@
+---
+label: Advanced Page
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: Title
+  description: The title of the page.
+  config:
+    required: true
+- type: boolean
+  name: hide_title
+  label: Hide page title
+  default: true
+- type: text
+  name: excerpt
+  label: Excerpt
+  description: The excerpt of the page displayed in meta data.
+- type: blocks
+  name: sections
+  label: Sections
+  description: Page sections
+  template_types:
+  - section_content
+  - section_form
+  - section_hero
+  - section_posts
+- type: text
+  name: template
+  label: Template
+  hidden: true
+  default: advanced
+  config:
+    required: true
+pages:
+- src/pages/contact.md
+- src/pages/index.md

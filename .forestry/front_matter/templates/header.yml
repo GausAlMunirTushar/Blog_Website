@@ -1,0 +1,74 @@
+---
+label: Header Configuration
+hide_body: true
+display_field: title
+fields:
+- type: text
+  name: title
+  label: Header Title
+  description: >-
+    The title displayed on the left side. If value is not set, the author name
+    will be used.
+- type: text
+  name: tagline
+  label: Header Tagline
+  description: The tagline displayed on the left side.
+- type: file
+  name: profile_img
+  label: Profile Image
+  description: The author profile image displayed on the left side.
+- type: text
+  name: profile_img_alt
+  label: Profile Image Alt Text
+  description: The alt text of the author profile image.
+- type: select
+  name: background
+  label: Background
+  description: The background of the left side.
+  default: dark
+  config:
+    source:
+      type: custom
+    options:
+    - dark
+    - light
+- type: boolean
+  name: has_nav
+  label: Enable Navigation Menu
+  description: Display the navigation menu bar on the left side.
+  default: true
+- type: field_group_list
+  name: nav_links
+  label: Navigation Links
+  description: List of navigation links.
+  fields:
+  - type: include
+    name: include_action
+    label: Action
+    template: action
+  config:
+    labelField: label
+- type: boolean
+  name: has_social
+  label: Enable Social Links
+  description: Display social links on the left side.
+  default: true
+- type: field_group_list
+  name: social_links
+  label: Social Links
+  description: List of social links on the left side.
+  fields:
+  - type: include
+    name: include_action
+    label: Action
+    template: action
+  config:
+    labelField: label
+- type: text
+  name: type
+  label: Object Type
+  description: The type of the object
+  hidden: true
+  default: header
+  config:
+    required: true

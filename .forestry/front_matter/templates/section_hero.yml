@@ -1,0 +1,41 @@
+---
+label: Hero Section
+hide_body: true
+display_field: title
+fields:
+- type: text
+  name: title
+  label: Title
+  description: The title of the section.
+- type: text
+  name: section_id
+  label: Element ID
+  description: >-
+    A unique identifier that can be used when linking to this section. Must not
+    contain whitespace.
+- type: textarea
+  name: content
+  label: Content
+  description: The text content of the section.
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+- type: field_group_list
+  name: actions
+  label: Action Buttons
+  fields:
+  - type: include
+    name: include_action
+    label: Action
+    template: action
+  config:
+    labelField: label
+- type: text
+  name: type
+  label: Object Type
+  description: The type of the object
+  hidden: true
+  default: section_hero
+  config:
+    required: true

@@ -1,0 +1,58 @@
+---
+label: Form Section
+hide_body: true
+display_field: title
+fields:
+- type: text
+  name: title
+  label: Title
+  description: The title of the section.
+- type: text
+  name: section_id
+  label: Element ID
+  description: >-
+    A unique identifier that can be used when linking to this section. Must not
+    contain whitespace.
+- type: textarea
+  name: content
+  label: Content
+  description: The text content of the section.
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+- type: text
+  name: form_id
+  label: Form ID
+  description: A unique identifier of the form. Must not contain whitespace.
+  config:
+    required: true
+- type: text
+  name: form_action
+  label: Form Action
+  description: >-
+    The path of your custom "success" page, if you want to replace the default
+    success message.
+- type: field_group_list
+  name: form_fields
+  label: Form Fields
+  fields:
+  - type: include
+    name: include_form_field
+    label: Form Field
+    template: form_field
+  config:
+    labelField: name
+- type: text
+  name: submit_label
+  label: Submit Button Label
+  config:
+    required: true
+- type: text
+  name: type
+  label: Object Type
+  description: The type of the object
+  hidden: true
+  default: section_form
+  config:
+    required: true

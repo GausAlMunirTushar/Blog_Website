@@ -1,0 +1,60 @@
+---
+label: Post
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: Title
+  description: The title of the post.
+  config:
+    required: true
+- type: text
+  name: subtitle
+  label: Subtitle
+  description: The text shown just below the post title.
+- type: datetime
+  name: date
+  label: Date
+  config:
+    required: true
+- type: file
+  name: thumb_img_path
+  label: Image (blog feed)
+  description: The image shown in the blog feed.
+- type: text
+  name: thumb_img_alt
+  label: Image alt text (blog feed)
+  description: The alt text of the blog feed image.
+- type: file
+  name: content_img_path
+  label: Image (single post)
+  description: The image shown in the single post.
+- type: text
+  name: content_img_alt
+  label: Image alt text (single post)
+  description: The alt text of the single post image.
+- type: text
+  name: excerpt
+  label: Excerpt
+  description: The excerpt of the post displayed in the blog feed and meta data.
+- type: text
+  name: canonical_url
+  label: Canonical URL
+  description: 'The canonical url of the post, if post originates elsewhere.'
+- type: text
+  name: template
+  label: Template
+  hidden: true
+  default: post
+  config:
+    required: true
+pages:
+- src/pages/posts/basic-rules-for-walking-in-the-mountains.md
+- src/pages/posts/best-waves-surfing-spain.md
+- src/pages/posts/fox-village-in-japan.md
+- src/pages/posts/fragments-of-iceland.md
+- src/pages/posts/grand-canyon.md
+- src/pages/posts/interior-designer.md
+- src/pages/posts/japan.md
+- src/pages/posts/the-ride-in-the-woods.md
+- src/pages/posts/working-from-home.md

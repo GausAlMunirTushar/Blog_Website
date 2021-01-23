@@ -1,0 +1,48 @@
+---
+label: Action
+hide_body: true
+display_field: label
+fields:
+- type: text
+  name: label
+  label: Label
+  config:
+    required: true
+- type: text
+  name: url
+  label: URL
+  config:
+    required: true
+- type: select
+  name: style
+  label: Style
+  default: link
+  config:
+    required: true
+    source:
+      type: custom
+    options:
+    - link
+    - button
+    - icon
+- type: text
+  name: icon_class
+  label: Icon
+  description: 'Font Awesome icon class name, used only when style is "icon".'
+- type: boolean
+  name: new_window
+  label: Open in new tab/window
+  default: false
+- type: boolean
+  name: no_follow
+  label: No follow
+  description: Add rel="nofollow" attribute to the link
+  default: false
+- type: text
+  name: type
+  label: Object Type
+  description: The type of the object
+  hidden: true
+  default: action
+  config:
+    required: true
