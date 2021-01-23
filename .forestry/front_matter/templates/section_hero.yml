@@ -10,9 +10,8 @@ fields:
 - type: text
   name: section_id
   label: Element ID
-  description: >-
-    A unique identifier that can be used when linking to this section. Must not
-    contain whitespace.
+  description: A unique identifier that can be used when linking to this section.
+    Must not contain whitespace.
 - type: textarea
   name: content
   label: Content

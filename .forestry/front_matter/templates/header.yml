@@ -6,9 +6,8 @@ fields:
 - type: text
   name: title
   label: Header Title
-  description: >-
-    The title displayed on the left side. If value is not set, the author name
-    will be used.
+  description: The title displayed on the left side. If value is not set, the author
+    name will be used.
 - type: text
   name: tagline
   label: Header Tagline
