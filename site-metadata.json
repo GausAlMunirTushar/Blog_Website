@@ -90,7 +90,7 @@
         "type": "action",
         "template": "action",
         "label": "GitHub",
-        "url": "https://github.com/",
+        "url": "https://github.com/GausAlMunirTushar",
         "style": "icon",
         "icon_class": "fa-github",
         "new_window": true,
