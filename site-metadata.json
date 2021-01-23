@@ -9,7 +9,7 @@
     "title": "Gaus Al Munir Tushar",
     "tagline": "Header Tagline",
     "profile_img": "/images/21.jpg",
-    "profile_img_alt": "Author avatar",
+    "profile_img_alt": "Gaus Al Munir Tushar",
     "background": "dark",
     "has_nav": true,
     "nav_links": [
@@ -70,7 +70,7 @@
         "type": "action",
         "template": "action",
         "label": "Twitter",
-        "url": "https://twitter.com/",
+        "url": "https://twitter.com/GausAlMunirTush",
         "style": "icon",
         "icon_class": "fa-twitter",
         "new_window": true,
