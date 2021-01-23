@@ -28,7 +28,7 @@ fields:
 - type: text
   name: icon_class
   label: Icon
-  description: 'Font Awesome icon class name, used only when style is "icon".'
+  description: Font Awesome icon class name, used only when style is "icon".
 - type: boolean
   name: new_window
   label: Open in new tab/window

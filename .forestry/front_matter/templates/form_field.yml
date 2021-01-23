@@ -22,13 +22,13 @@ fields:
 - type: text
   name: name
   label: Name
-  description: 'The name of the field, submitted with the form.'
+  description: The name of the field, submitted with the form.
   config:
     required: true
 - type: text
   name: label
   label: Label
-  description: 'The caption of the field, shown above the field input.'
+  description: The caption of the field, shown above the field input.
 - type: text
   name: default_value
   label: Default Value
@@ -36,7 +36,7 @@ fields:
 - type: list
   name: options
   label: Options
-  description: 'The list of options, used only when the field type is "select".'
+  description: The list of options, used only when the field type is "select".
 - type: boolean
   name: is_required
   label: Is the field required?
