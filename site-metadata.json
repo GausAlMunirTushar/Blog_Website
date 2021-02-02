@@ -6,10 +6,10 @@
   "header": {
     "type": "header",
     "template": "header",
-    "title": "Stackbit Fresh",
-    "tagline": "Header Tagline",
-    "profile_img": "images/avatar.png",
-    "profile_img_alt": "Author avatar",
+    "title": "Gaus Al Munir Tushar",
+    "tagline": "Full-Stack Developer |Graphic Designer | Programmer | Entrepreneur || PMI Speaker",
+    "profile_img": "/images/gaus-al-munir-tushar.jpg",
+    "profile_img_alt": "Gaus Al Munir Tushar",
     "background": "dark",
     "has_nav": true,
     "nav_links": [
